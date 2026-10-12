@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Barlow+Condensed:wght@700&display=swap");
+
+:root {
+	--wall: #ECEEEC;
+	--card: #FFFFFF;
+	--ink: #1D2733;
+	--muted: #5D6975;
+	--rail: #FFC20E;
+	--seat: #2152B4;
+	--seam: #CDD2D4;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--wall: #12171D;
+		--card: #1B222B;
+		--ink: #E8ECEF;
+		--muted: #9AA6B2;
+		--seat: #8CAFF0;
+		--seam: #2E3843;
+	}
+}
+
+* { box-sizing: border-box; }
+
+body {
+	margin: 0;
+	background: var(--wall);
+	color: var(--ink);
+	font: 500 17px/1.6 "Barlow", system-ui, sans-serif;
+}
+
+main {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 40px 16px 64px;
+}
+
+h1, h2 {
+	font-family: "Barlow Condensed", "Barlow", sans-serif;
+	font-weight: 700;
+	line-height: 1.15;
+}
+
+h1 { font-size: 40px; margin: 8px 0 4px; }
+h2 { font-size: 26px; margin: 32px 0 8px; }
+
+a { color: var(--seat); font-weight: 600; }
+
+ul { padding-left: 22px; }
+
+.icon { border-radius: 24px; display: block; }
+.lead { font-size: 21px; font-weight: 600; margin-top: 0; }
+.muted { color: var(--muted); }
+.small { font-size: 14px; margin-top: 40px; }
+.back { margin: 0 0 8px; }
+.links { list-style: none; padding: 0; display: flex; gap: 24px; }
